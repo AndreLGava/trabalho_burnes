@@ -1,100 +1,277 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-	<title>Site da Tidinha</title>
+	<title>Site do André</title>
 	<meta charset="utf-8">
 
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/tablet.css"
-	media="(max-width:600px)">
-	<link rel="stylesheet" type="text/css" href="css/mobile.css"
-	media="(max-width:480px)">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
 	<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
 	<script type="text/javascript" src="js/modernizr.js"></script>
 	<script type="text/javascript" src="js/scroll.js"></script>
-
+	<script>
+		function altera(){
+			$(".menu").toggle();
+		}
+	</script>
 </head>
-<body id="topo">
-
-<header>
-	<a href="#topo" title="Home" id="logo">
-		TIDINHA
-	</a>
-	<a href="#" id="btnmenu" title="Mostrar Menu">
-		<img src="imgs/menu2.png" alt="Menu" title="Menu">
-	</a>
-	<nav id="menu">
-		<ul>
-			<li>
-				<a href="#topo" title="Home">Home</a>
-			</li>
-			<li>
-				<a href="#sobre" title="Sobre">Sobre</a>
-			</li>
-			<li>
-				<a href="#portfolio" title="Portfolio">
-					Portfolio
-				</a>
-			</li>
-			<li>
-				<a href="#contato" title="Contato">Contato</a>
-			</li>
-		</ul>
-	</nav>
-</header>
-
-<div id="banner" class="cycle-slideshow">
-	<img src="imgs/tidinha1.jpg" alt="Banner 1" title="Banner 1">
-	<img src="imgs/tidinha2.jpg" alt="Banner 2" title="Banner 2">
-</div>
-
-<div class="box" id="sobre">
-	<div class="container">
-		<h1>Sobre a Tidinha</h1>
-
-		<div class="colunas">
-			<img src="imgs/tidinha.jpg" alt="Tidinha" 
-			title="Tidinha" class="redondo">
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-info clearfix">
+				<div class="pull-left">
+				  <div class="brand">
+				    André Luiz Gava
+				  </div>
+				</div>
+				<div class="pull-right wrapper">
+					<a href="#" id="btnmenu" onclick="altera()" title="Mostrar Menu">
+						<img src="imgs/menu.png">
+					</a>
+		   			<ul class="menu">
+						<li><a href="#topo" title="Home">Home</a></li>
+						<li><a href="#sobre" title="Sobre">Sobre</a></li>
+						<li><a href="#portfolio" title="Portfolio">Portfólio</a></li>
+						<li><a href="#contato" title="Contato">Contato</a></li>
+					</ul>
+						
+		   		</div>
+			</nav>
+			<div class="row" id="topo">
+					<div id="banner" class="cycle-slideshow">
+						<img src="imgs/img0.jpg" alt="Banner 0" title="Banner 0">
+						<img src="imgs/img1.jpg" alt="Banner 1" title="Banner 1">
+						<img src="imgs/img2.jpg" alt="Banner 2" title="Banner 2">
+						<img src="imgs/img3.jpg" alt="Banner 3" title="Banner 3">
+					</div>
+			</div>			
+			<div class="row">
+				<div id="sobre" class="col-lg-24 col-md-24 col-sm-24 col-xs-24 safe colorido" >
+					<h1 class="col-lg-offset-2 col-md-offset-2 col-xs-offset-1">Sobre</h1>
+					<div class="col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-10 col-xs-offset-1 col-xs-22">
+						<img src="imgs/andre.jpg" alt="André" title="André" class="img-circle grey">
+					</div>
+					<div class="col-lg-14 col-md-14 col-sm-11 col-xs-offset-1 col-xs-22">
+						<div class="text-justify">
+							<p>Sou André Luiz Gava, pós-graduando no curso de Desenvolvimento WEB, Cloud e Dispositivos móveis pela Unoesc de Chapecó. Gosto muito de desenvolvimento WEB, principalmente o desenvolvimento front-end, com HTML, CSS3 e JavaScript.</p>
+							<p>Também adoro desenhar, me interesso por diversos assuntos da ciências como quimica, física, astronomia e biologia. Falo inglês quase fluentemente, nos horários vagos gosto de navegar pela internet, ler, sair com amigos etc. Neste mês começei a fazer parte da AEISESC, uma ONG jovem que visa impactar o mundo positivamente através do intercambio de pessoas que possam contribuir em outras partes do mundo, e as bases da organização para mudar o mundo são as metas da ONU.</p>
+							<p>Já trabalhei como professor de informática básica (Pacote ofice, Windows, Internet) e design (Photoshop, Illustrator e Corel Draw). <br> Também já trabalhei palestrando em escolas, desenvolvendo peças publicitárias e sistemas na FAI Faculdades de Itapiranga. Atualmente trabalho com programação WEB com Ruby on Rails.
+							</p>
+							<p>Mas tenho uma fixação por frameworks de desenvolvimento front-end como Bootstrap e o projeto Font Awesome, este projeto foi desenvolvido com SASS baseando-se no bootstrap</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div  class="col-lg-24  col-md-24 col-sm-24 col-xs-24 default" >
+					<div id="portfolio" class="col-lg-20 col-lg-offset-2 col-md-20 col-md-offset-2 col-sm-offset-1 col-sm-22 col-xs-offset-1 col-xs-22" >
+						<h1>Portfólio</h1>
+		<p>Para este trabalho eu desenvolvi alguns componentes baseado em outros que encontrei pela internet e no próprio Bootstrap, a ideia é que eles fossem compativeis com o Bootstrap, trabalhei em um conceito de 24 colunas( ao invés do padrão do bootstrap - 12), também expandi o padrão de 6 tons (danger, warning, success, info, primary e default), para 10 adicionando life, alert, safe, inverted, todos com cores próprias, além disso os dois componentes extras criados são switch e portlet. Estes componentes e outros foram adicionados todos com os 10 tons disponíveis.</p>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-8">
+						<div class="bs-callout bs-callout-primary bs-callout-left portlet portlet-primary ">                 
+								<div class="portlet-heading">
+									<div class="caption">
+										<span class="caption-subject text-uppercase"> Portlet</span>
+										<span class="caption-helper">primary</span>
+									</div>                
+								</div>
+								<div class="portlet-body">
+									<h4>Borda esquerda</h4>
+									<p>Exemplo de portlet, semelhante aos panels do bootstrap</p>
+								</div>
+								<div class="portlet-footer">
+								<label class="pull-left control-label" for="checkboxes">Switch</label>
+								<label class="switch pull-right">
+	        					<input type="checkbox" id="input" class="switch-input switch-primary">
+	        					<span class="switch-label" data-on="" data-off=""></span>
+	        					<span class="switch-handle"></span>
+	      					</label>
+								</div>
+							</div> 
+						</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-8">
+						<div class="bs-callout bs-callout-life bs-callout-top portlet portlet-life ">                 
+								<div class="portlet-heading">
+									<div class="caption">
+										<span class="caption-subject text-uppercase"> Portlet</span>
+										<span class="caption-helper">life</span>
+									</div>                
+								</div>
+								<div class="portlet-body">
+									<h4>Borda acima</h4>
+									<p>Exemplo de portlet, semelhante aos panels do bootstrap</p>
+								</div>
+								<div class="portlet-footer">
+								<label class="pull-left control-label" for="checkboxes">Switch</label>
+								<label class="switch pull-right">
+	        					<input type="checkbox" id="input" class="switch-input switch-life">
+	        					<span class="switch-label" data-on="" data-off=""></span>
+	        					<span class="switch-handle"></span>
+	      					</label>
+								</div>
+							</div> 
+						</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-8">
+						<div class="bs-callout bs-callout-safe bs-callout-bottom portlet portlet-safe ">                 
+								<div class="portlet-heading">
+									<div class="caption">
+										<span class="caption-subject text-uppercase"> Portlet</span>
+										<span class="caption-helper">safe</span>
+									</div>                
+								</div>
+								<div class="portlet-body">
+									<h4>Borda abaixo</h4>
+									<p>Exemplo de portlet, semelhante aos panels do bootstrap</p>
+								</div>
+								<div class="portlet-footer">
+								<label class="pull-left control-label" for="checkboxes">Switch</label>
+								<label class="switch pull-right">
+	        					<input type="checkbox" id="input" class="switch-input switch-safe">
+	        					<span class="switch-label" data-on="" data-off=""></span>
+	        					<span class="switch-handle"></span>
+	      					</label>
+								</div>
+							</div> 
+						</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-8">
+						<div class="bs-callout bs-callout-inverted bs-callout-right portlet portlet-inverted ">                 
+								<div class="portlet-heading">
+									<div class="caption">
+										<span class="caption-subject text-uppercase"> Portlet</span>
+										<span class="caption-helper">inverted</span>
+									</div>                
+								</div>
+								<div class="portlet-body">
+									<h4>Borda direita</h4>
+									<p>Exemplo de portlet, semelhante aos panels do bootstrap</p>
+								</div>
+								<div class="portlet-footer">
+								<label class="pull-left control-label" for="checkboxes">Switch</label>
+								<label class="switch pull-right">
+	        					<input type="checkbox" id="input" class="switch-input switch-inverted">
+	        					<span class="switch-label" data-on="" data-off=""></span>
+	        					<span class="switch-handle"></span>
+	      					</label>
+								</div>
+							</div> 
+						</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-8">
+						<div class="bs-callout bs-callout-danger portlet portlet-danger ">                 
+								<div class="portlet-heading">
+									<div class="caption">
+										<span class="caption-subject text-uppercase"> Portlet</span>
+										<span class="caption-helper">danger</span>
+									</div>                
+								</div>
+								<div class="portlet-body">
+									<h4>Sem borda</h4>
+									<p>Exemplo de portlet, semelhante aos panels do bootstrap</p>
+								</div>
+								<div class="portlet-footer">
+								<label class="pull-left control-label" for="checkboxes">Switch</label>
+								<label class="switch pull-right">
+	        					<input type="checkbox" id="input" class="switch-input switch-danger">
+	        					<span class="switch-label" data-on="" data-off=""></span>
+	        					<span class="switch-handle"></span>
+	      					</label>
+								</div>
+							</div> 
+						</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-8">
+						<div class="bs-callout bs-callout-alert portlet portlet-alert ">                 
+								<div class="portlet-heading">
+									<div class="caption">
+										<span class="caption-subject text-uppercase"> Portlet</span>
+										<span class="caption-helper">alert</span>
+									</div>                
+								</div>
+								<div class="portlet-body">
+									<h4>Sem borda</h4>
+									<p>Exemplo de portlet, semelhante aos panels do bootstrap</p>
+								</div>
+								<div class="portlet-footer">
+								<label class="pull-left control-label" for="checkboxes">Switch</label>
+								<label class="switch pull-right">
+	        					<input type="checkbox" id="input" class="switch-input switch-alert">
+	        					<span class="switch-label" data-on="" data-off=""></span>
+	        					<span class="switch-handle"></span>
+	      					</label>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div  class="col-lg-24  col-md-24 col-sm-24 col-xs-24 default" >
+					<div id="portfolio" class="col-lg-20 col-lg-offset-2 col-md-20 col-md-offset-2 col-sm-offset-1 col-sm-22 col-xs-offset-1 col-xs-22" >
+						<h2>Botões</h2>
+							<a href="#" class="btn btn-inverted">inverted</a>
+							<a href="#" class="btn btn-default">default</a>
+							<a href="#" class="btn btn-danger">danger</a>
+							<a href="#" class="btn btn-warning">warning</a>
+							<a href="#" class="btn btn-alert">alert</a>
+							<a href="#" class="btn btn-success">success</a>
+							<a href="#" class="btn btn-safe">safe</a>
+							<a href="#" class="btn btn-info">info</a>
+							<a href="#" class="btn btn-primary">primary</a>
+							<a href="#" class="btn btn-life">life</a>
+							<br>
+							<a href="#" class="btn btn-round btn-inverted">inverted</a>
+							<a href="#" class="btn btn-round btn-default">default</a>
+							<a href="#" class="btn btn-round btn-danger">danger</a>
+							<a href="#" class="btn btn-round btn-warning">warning</a>
+							<a href="#" class="btn btn-round btn-alert">alert</a>
+							<a href="#" class="btn btn-round btn-success">success</a>
+							<a href="#" class="btn btn-round btn-safe">safe</a>
+							<a href="#" class="btn btn-round btn-info">info</a>
+							<a href="#" class="btn btn-round btn-primary">primary</a>
+							<a href="#" class="btn btn-round btn-life">life</a>
+							<br>
+							<a href="#" class="btn btn-outline btn-inverted">inverted</a>
+							<a href="#" class="btn btn-outline btn-default">default</a>
+							<a href="#" class="btn btn-outline btn-danger">danger</a>
+							<a href="#" class="btn btn-outline btn-warning">warning</a>
+							<a href="#" class="btn btn-outline btn-alert">alert</a>
+							<a href="#" class="btn btn-outline btn-success">success</a>
+							<a href="#" class="btn btn-outline btn-safe">safe</a>
+							<a href="#" class="btn btn-outline btn-info">info</a>
+							<a href="#" class="btn btn-outline btn-primary">primary</a>
+							<a href="#" class="btn btn-outline btn-life">life</a>
+							<br>
+							<a href="#" class="btn btn-round btn-outline btn-inverted">inverted</a>
+							<a href="#" class="btn btn-round btn-outline btn-default">default</a>
+							<a href="#" class="btn btn-round btn-outline btn-danger">danger</a>
+							<a href="#" class="btn btn-round btn-outline btn-warning">warning</a>
+							<a href="#" class="btn btn-round btn-outline btn-alert">alert</a>
+							<a href="#" class="btn btn-round btn-outline btn-success">success</a>
+							<a href="#" class="btn btn-round btn-outline btn-safe">safe</a>
+							<a href="#" class="btn btn-round btn-outline btn-info">info</a>
+							<a href="#" class="btn btn-round btn-outline btn-primary">primary</a>
+							<a href="#" class="btn btn-round btn-outline btn-life">life</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div id="contato" class="col-lg-24  col-md-24 col-sm-24 col-xs-24 success colorido" >
+					<div class="col-lg-20 col-lg-offset-2 col-md-20 col-md-offset-2 col-sm-24 col-xs-24" >
+						<h1>Contato</h1>
+						<div class="text-center">
+							<a href="https://www.facebook.com/andreluizgava" class="fa link fa-facebook-square" target="_blank"></a>
+							<a href="https://br.linkedin.com/in/andreluizgava" class="fa link fa-linkedin-square" target="_blank"></a>
+							<a href="https://github.com/AndreLGava" class="fa link fa-github-square" target="_blank"></a>
+							<a href="99026866" title= "9902-6866"class="fa link fa-whatsapp" target="_blank"></a>
+							<a href="mailto:andrelzgava@gmail.com" class="fa link fa-envelope-square" target="_blank"></a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="colunas">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. </p>
-			<p>Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</p>
-		</div>
-	</div>
-</div>
-
-<div class="box" id="portfolio">
-	<div class="container">
-		<h1>Meu Portfólio</h1>
-
-	</div>
-</div>
-
-<div class="box" id="contato">
-	<div class="container">
-		<h1>Entre em Contato</h1>
-
-	</div>
-</div>
-
-<footer>
-	<p>Site da Tidinha - Todos os direitos reservados</p>
-	<p>Desenvolvido por Tidinho da Silva</p>
-</footer>
-
-<script type="text/javascript">
-	$("#btnmenu").click(function(){
-		$("#menu").toggle();
-	})
-</script>
-</body>
+	</body>
 </html>

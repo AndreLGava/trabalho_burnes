@@ -1,0 +1,144 @@
+
+.navbar{
+  margin:0;
+  width: 100%;
+    -webkit-box-shadow: inset 0 5px 15px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 5px 15px rgba(0, 0, 0, .125);
+}
+
+.brand{
+   font: {weight: bold; size: 14px;}
+   text-decoration: none;
+   margin: 5px; 
+   padding: 10px;
+   color: #FFF;
+   
+}
+
+nav { 
+  float: right;
+  position: fixed;
+  z-index: 1000;
+  }
+
+nav ul li { 
+  display: inline;
+  list-style: none; 
+  }
+
+nav ul li a { 
+  padding: 15px;
+  color: #FFF;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.5s; 
+  }
+
+.cycle-slideshow { 
+  width: 100%;
+  float: left;
+  margin-top: 45px;
+  & img { width: 100%; }
+  }
+
+$color_shuttle_gray_approx: #576979;
+$color_outer_space_approx: #283744;
+$color_ebb_approx: #ece8e5;
+$color_fiord_approx: #455868;
+$white: #fff;
+$color_regent_gray_approx: #8c99a4;
+
+$font_0: PT Sans;
+$font_1: Arial;
+$font_2: sans-serif;
+
+
+$url_0: url(../imgs/nav-icon.png);
+
+.clearfix {
+  *zoom: 1;
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+nav {
+  ul {
+    padding: 0;
+    margin: 0 auto;
+  }
+  li {
+    display: inline;
+    float: left;
+    a {
+      box-sizing: border-box;
+    }
+    &:last-child a {
+      border-right: 0;
+    }
+  }
+  a {
+    color: $white;
+    display: inline-block;
+    text-decoration: none;
+    &#pull {
+      display: none;
+    }
+  }
+}
+
+@media only screen and(max-width : 480px) {
+
+  nav {
+    border-bottom: 0;
+    ul {
+      display: none;
+      height: auto;
+    }
+    a#pull {
+      display: block;
+      width: 100%;
+      position: relative;
+      &:after {
+        content: "";
+        background: $url_0 no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+      }
+      &:active, :hover{
+       height: 123px;
+        z-index: 3;
+        -webkit-transition-delay: 0s;
+        ul {
+          display: list;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+@media only screen and(max-width : 320px) {
+  nav li {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+}
+
+a{
+  text-decoration:none;
+  transition: all .5s;
+  :hover{
+    text-decoration:none;
+  }
+}

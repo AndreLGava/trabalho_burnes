@@ -1,0 +1,75 @@
+ 
+ @each $name,$tamanho in $screen {
+  @media (min-width: $tamanho){
+    @for $i from 1 through $colums {
+      .col-#{$name}-#{$i} {width: percentage($i) / $colums; float: left;position: relative;  min-height: 1px;  box-sizing: border-box; padding: 5px;}
+      .col-#{$name}-offset-#{$i} {margin-left: percentage($i) / $colums;}
+    }
+  }
+}
+@each $name, $color in $andrestrap{
+    .#{$name}{
+      background-color: lighten($color,10);
+    }
+    .btn-#{$name} {
+      background-color: $color;
+      border: 1px solid darken($color, 8);
+      &:hover{
+        background-color: darken($color,8);
+      }
+    }
+    .jumbotron-#{$name} {
+      background-color: $color;
+      padding-top: 30px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      color: inherit;
+    }
+    .btn-#{$name}.btn-outline {
+      color: $color;
+      &:hover{
+        color: #fff;
+      }
+    }
+    
+    .portlet-#{$name} {
+      border-color: $color;
+      >.portlet-heading {
+        border-bottom: 1px solid $color!important;
+        >.caption {
+          color: darken($color, 10)!important;
+          >.caption-helper {
+            color: lighten($color, 5)!important;
+          }
+        }
+      }
+      >.portlet-footer {
+        border-top: 1px solid $color !important;
+        color: darken($color, 10)!important;
+      }
+    }
+    
+    .bs-callout-#{$name} {
+        border-color: darken($color, 10) !important;
+    }
+    .bs-callout-#{$name} h4 {
+        color: darken($color, 10);
+    }
+    .switch-#{$name}:checked ~ .switch-label{
+      background: $color;
+    }
+    @if $color == $default {
+        .navbar-#{$name}{
+          background-color: darken($color, 5);
+          & a:hover { background: lighten($color,5);}
+        }
+      }@else{
+        .navbar-#{$name}{
+          background-color: lighten($color,10);
+          & a:hover { background: darken($color,10);}
+        }
+    }
+
+}
